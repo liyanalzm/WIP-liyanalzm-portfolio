@@ -26,7 +26,9 @@ const Item = styled.div`
     height: 24px;
     width: 24px;
   }
-  ${props => props.withRightSpace && `
+  ${props =>
+    props.withRightSpace &&
+    `
     margin-right: 8px;
     &:last-child {
       margin-right: 0;
@@ -43,22 +45,33 @@ function Footer() {
     <Wrapper id="footer">
       <Container>
         <ItemWrap>
-
-        <Item withRightSpace>
-          <a href="https://twitter.com/liyanalzm" target="_blank">
-            <Twitter />
-          </a>
-        </Item>
-        <Item withRightSpace>
-          <a href="https://medium.com/@liyanalzm" target="_blank">
-            <Medium />
-          </a>
-        </Item>
-        <Item withRightSpace>
-          <a href="https://www.linkedin.com/in/nur-liyana-mohd-lazim-220847114/" target="_blank">
-            <Linkedin />
-          </a>
-        </Item>
+          <Item withRightSpace>
+            <a
+              href="https://twitter.com/liyanalzm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Twitter />
+            </a>
+          </Item>
+          <Item withRightSpace>
+            <a
+              href="https://medium.com/@liyanalzm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Medium />
+            </a>
+          </Item>
+          <Item withRightSpace>
+            <a
+              href="https://www.linkedin.com/in/nur-liyana-mohd-lazim-220847114/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin />
+            </a>
+          </Item>
         </ItemWrap>
 
         <HR />
