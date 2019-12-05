@@ -1,10 +1,11 @@
 // Libraries
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
+import { Link } from "gatsby"
 import { TimelineMax, Power1, Power4 } from "gsap/TweenMax"
 
 // Styles
 import "../styles/404.css"
-import { Container, Wrapper, MainImage, Attribution } from "../styles/Common/style"
+import { Container, Wrapper, MainImage, Attribution, Button } from "../styles/Common/style"
 
 // Images
 import Milk from "../images/milk"
@@ -49,15 +50,23 @@ const NotFoundPage = () => {
 
     new TimelineMax({ SVG2GIF: true, repeat: 0 }).timeScale(1)
   }, [])
+
+  const [footerHeight, setFooterHeight] = useState(null)
+  useEffect(() => {
+    const footer = document.getElementById("footer")
+    if (footer) {
+      setFooterHeight(footer.clientHeight)
+    }
+  }, [])
   return (
     <Layout>
       <SEO title="404: Not found" />
-      <Container backgroundColor="#6ace7c">
-        <Wrapper>
+      <Container backgroundColor={'#6ace7c'} footerHeight={footerHeight}>
+        <Wrapper style={{ textAlign: 'center' }}>
           <MainImage>
             <Milk />
             <Attribution>
-              Designed by {' '}
+              Designed by{' '}
               <a
                 href="https://www.freepik.com/free-vector/404-error-design-with-milk_1535244.htm"
                 target="_blank"
@@ -71,7 +80,12 @@ const NotFoundPage = () => {
             Oops! The page that you're looking for cannot be found in the
             directory.
           </h2>
-          <button>Return to homepage</button>
+
+        <Link
+          to="/"
+        >
+        <Button>Return to homepage</Button>
+        </Link>
         </Wrapper>
       </Container>
     </Layout>

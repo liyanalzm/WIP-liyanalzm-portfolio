@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import EggOnMill from "./egg-on-mill/egg-on-mill"
 import {
   Container,
@@ -9,13 +9,23 @@ import {
 } from "../../styles/Common/style"
 
 function Underconstruction() {
+
+  const [footerHeight, setFooterHeight] = useState(null)
+  useEffect(() => {
+    const footer = document.getElementById("footer")
+    if (footer) {
+      setFooterHeight(footer.clientHeight)
+    }
+  }, [])
+
+  
   return (
-    <Container backgroundColor="#53aefc">
+    <Container backgroundColor={'#53aefc'} footerHeight={footerHeight}>
       <Wrapper>
         <MainImage>
           <EggOnMill />
           <Attribution>
-            Copyright (c) 2019 by{" "}
+            Designed by{" "}
             <a
               href="https://codepen.io/chrisgannon/pen/Vbzwyg"
               target="_blank"

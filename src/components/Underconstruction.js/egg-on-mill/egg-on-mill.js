@@ -13,6 +13,7 @@ const bodymovinOptions = {
 const Animation = styled.div`
   margin: auto;
   max-width: 600px;
+  min-height: 468px;
 `
 
 function EggOnMill() {

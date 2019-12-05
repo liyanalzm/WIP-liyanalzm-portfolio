@@ -9,10 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
+import Footer from "./Common/Footer"
 
-const Layout = ({ children, background }) => {
+const Layout = ({ children, backgroundColor }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -22,15 +22,12 @@ const Layout = ({ children, background }) => {
       }
     }
   `)
-
   return (
     <>
-      <main>{children}</main>
-      <footer>
-        © Liyana Lazim, {new Date().getFullYear()} &#x2022; Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <main>
+        {children}
+      </main>
+      <Footer />
     </>
   )
 }
