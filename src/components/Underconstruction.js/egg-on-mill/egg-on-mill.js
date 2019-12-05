@@ -1,25 +1,27 @@
 import React from "react"
 import styled from "styled-components"
-import ReactBodymovin from "react-bodymovin/lib/ReactBodymovinFull"
+import Lottie from "lottie-react-web"
+import Egg from "../../../images/egg-on-mill.json"
 
 const bodymovinOptions = {
   animType: "svg",
   loop: true,
   prerender: true,
   autoplay: true,
-  path: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/egg_data.json",
+  animationData: Egg,
 }
 
 const Animation = styled.div`
   margin: auto;
   max-width: 600px;
-  min-height: 468px;
 `
 
 function EggOnMill() {
   return (
     <Animation id="animationWindow">
-      <ReactBodymovin options={bodymovinOptions} />
+      <Lottie
+        options={bodymovinOptions}
+      />
     </Animation>
   )
 }
