@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  min-height: ${props => props.footerHeight ? `calc(100vh - ${props.footerHeight}px)` : '100vh'};
+  min-height: ${props => props.footerHeight ? `calc(100vh - ${props.footerHeight}px)` : 'calc(100vh - 141px)'};
   background: ${props => props.backgroundColor || "#ffffff"};
 `
 
