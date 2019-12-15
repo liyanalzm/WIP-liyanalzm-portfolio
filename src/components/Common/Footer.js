@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Twitter from "../../images/socials/twitter.svg"
 import Linkedin from "../../images/socials/linkedin.svg"
-import Medium from "../../images/socials/medium.svg"
+import Wordpress from "../../images/socials/wordpress.svg"
 
 const Wrapper = styled.footer`
   padding: 16px;
@@ -56,11 +56,11 @@ function Footer() {
           </Item>
           <Item withRightSpace>
             <a
-              href="https://medium.com/@liyanalzm"
+              href="https://liyanawritescode.wordpress.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Medium />
+              <Wordpress />
             </a>
           </Item>
           <Item withRightSpace>
