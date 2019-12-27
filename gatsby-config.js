@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Liyana Lazim's portfolio`,
-        short_name: `starter`,
+        short_name: `LL's Portfolio`,
         start_url: `/`,
         background_color: `#4c4c4c`,
         theme_color: `#4c4c4c`,
