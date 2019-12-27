@@ -23,7 +23,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#4c4c4c`,
         theme_color: `#4c4c4c`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/oleander.png`, // This path is relative to the root of the site.
       },
     },
@@ -40,9 +40,9 @@ module.exports = {
       options: {
         ssr: true
       }
-    }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`
   ],
 }
