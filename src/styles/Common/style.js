@@ -38,6 +38,11 @@ export const Text = styled.span`
   font-size: 16px;
   color: #333;
   line-height: 20px;
+  a {
+    display: inline-block;
+    color: #274e70;
+    margin-right: 8px;
+  }
 `
 
 export const Button = styled.button`

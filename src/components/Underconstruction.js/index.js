@@ -42,6 +42,31 @@ function Underconstruction() {
           Thank you for your visit to my portfolio. However, right now I am
           working very hard on finishing it. Please come back soon!
         </Text>
+        <Text align="center" style={{ marginTop: "20px", textAlign: "center" }}>
+          In the meantime, check out my profile at these links below:
+          <br />
+          <a
+            href="https://www.linkedin.com/in/nur-liyana-mohd-lazim-220847114/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/liyanalzm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+          <a
+            href="https://codesandbox.io/u/liyanalzm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CodeSandBox
+          </a>
+        </Text>
       </Wrapper>
     </Container>
   )
