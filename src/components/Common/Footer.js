@@ -77,15 +77,7 @@ function Footer() {
         <HR />
 
         <Item>
-          © Liyana Lazim, {new Date().getFullYear()} &#x2022; Built with
-          {` `}
-          <a
-            href="https://www.gatsbyjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Gatsby
-          </a>
+          © Liyana Lazim, {new Date().getFullYear()}
           <br />
           All rights reserved.
         </Item>
